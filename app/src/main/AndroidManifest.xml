@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".AlphabetClassificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Answer_Number_wrong"
+            android:exported="false" />
+        <activity
+            android:name=".Answer_Number_correct"
+            android:exported="false" />
+        <activity
+            android:name=".ImageClassificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Test_Alphabet"
+            android:exported="false" />
+        <activity
+            android:name=".Test_Number"
+            android:exported="false" />
+        <activity
+            android:name=".Test_Word"
+            android:exported="false" />
+        <activity
+            android:name=".FrameCapture"
+            android:exported="false" />
+        <activity
+            android:name=".Answer_wrong"
+            android:exported="false" />
+        <activity
+            android:name=".Answer_correct"
+            android:exported="false" />
+        <activity
+            android:name=".WordMode"
+            android:exported="false" />
+        <activity
+            android:name=".waiting_WordMode"
+            android:exported="false" />
+        <activity
+            android:name=".AlphabetMode"
+            android:exported="false" />
+        <activity
+            android:name=".waiting_AlphabetMode"
+            android:exported="false" />
+        <activity
+            android:name=".NumberMode"
+            android:exported="false" />
+        <activity
+            android:name=".waiting_NumberMode"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Start"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
